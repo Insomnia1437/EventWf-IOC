@@ -1,0 +1,15 @@
+#==============================================================================
+# EPICS Events Waveform record
+
+
+record(waveform,        "$(PREFIX):$(node):Event-Wf"){
+        field(DESC,     "Event Codes Array")
+        field(DTYP,     "EventWf")
+		field(SCAN,		"Passive")
+		field(INP,		"$(PREFIX):$(node):CLOCK1:SEC10 NPP")
+		field(FTVL,     "STRING")
+        field(NELM,     "5")
+}
+
+
+

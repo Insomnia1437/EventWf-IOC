@@ -1,0 +1,17 @@
+record(stringin, "$(PREFIX):$(node):now")
+{
+	field(DESC,	"Current time and date")
+	field(DTYP,	"Soft Timestamp")
+	field(INP,	"@%Y-%m-%d %H:%M:%S.%03f")
+	field(SCAN,	"1 second")
+	field(FLNK,	"$(PREFIX):$(node):nownow")
+}
+
+record(stringin, "$(PREFIX):$(node):nownow")
+{
+	field(INP,	"$(PREFIX):$(node):now")
+	field(VAL,	"0")
+}
+
+
+

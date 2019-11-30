@@ -1,0 +1,17 @@
+file db/aiSecond.db {
+        pattern
+        { PREFIX, node }
+        { "test1", "sdcswd" }
+}
+
+#file db/eventWf.db {
+#        pattern
+#        { PREFIX, node }
+#        { "test1", "sdcswd" }
+#}
+
+file db/ts.db {
+        pattern
+        { PREFIX, node }
+        { "test1", "sdcswd" }
+}
